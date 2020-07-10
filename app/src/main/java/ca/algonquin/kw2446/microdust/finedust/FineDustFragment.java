@@ -92,8 +92,7 @@ public class FineDustFragment extends Fragment implements FineDustContract.View 
         if (getArguments() != null) {
             double lat = getArguments().getDouble("lat");
             double lng = getArguments().getDouble("lng");
-//            mRepository = new LocationFineDustRepository(lat, lng);
-            this.newLoad(lat,lng);
+            newLoad(lat,lng);
         } else {
             mRepository = new LocationFineDustRepository(0, 0);
             ((MainActivity) getActivity()).getLastKnownLocation();
